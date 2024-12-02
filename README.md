@@ -21,7 +21,7 @@ The difference between these two things is that
 accounting is about the past (historical facts),
 and finance is about the future (sensible guessing).
 The fun police cover both responsibilities.
-The accountent (test suite) runs _after_ code is written,
+The accountant (test suite) runs _after_ code is written,
 and the financiers (policies) are evaluated _before_.
 
 The executive analogy is a high performance race car.
@@ -30,16 +30,16 @@ that accelerates the creation of high-quality software
 (`hands waive furiously`).
 Architecture compliance unittests are the brakes
 that quickly and effectively keep the race car
-on the track when it suddently need to change
-it's speed and direction.
+on the track when it suddenly needs to change
+its speed and direction.
 
-You need a good balance of both to minimise you lap times.
+You need a good balance of both to minimise your lap times.
 
 ### Policies Accelerate Delivery
 
 CONVENTIONS.md is an idiom, a grimoire of policies
 for telling your AI code generator HOW you want it to work.
-A fun police CONENTIONS.md file is exactly one of those,
+A fun police CONVENTIONS.md file is exactly one of those,
 with the intent that the spell help the tool
 to load the right policy at the right time.
 
@@ -68,12 +68,12 @@ not grumbling goblin accountants.
 Linters are part of the fine-grained code quality system,
 that prevent mythologically bad wastes of effort;
 like the tabs vs. spaces war (spaces won)
-and vim vs. emacs (the Koreane War~sque draw
+and vim vs. emacs (the Korean War-esque draw
 of the software world).
 
 The architectural compliance tests would almost be
 _unreasonably restrictive_ if it wasn't for the fact that
-AI code generation tools are so _unreasonable effectivene_.
+AI code generation tools are so _unreasonably effective_.
 The two must be in ballance, they must be maintained together.
 
 ### Tech-stacks are playbooks 
