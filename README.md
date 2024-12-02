@@ -27,7 +27,7 @@ and the financiers (policies) are evaluated _before_.
 The executive analogy is a high performance race car.
 Software Architecture Policies are the engine
 that accelerates the creation of high-quality software
-<hands waive furiously>.
+(`hands waive furiously`).
 Architecture compliance unittests are the brakes
 that quickly and effectively keep the race car
 on the track when it suddently need to change
