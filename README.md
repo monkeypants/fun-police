@@ -20,13 +20,13 @@ However, this is how it looks when you deploy the fun police in your repository:
 repo/
  |-- some/
      |-- path/
-         |--.fun_police/
-         |   |-- CONVENTIONS
-         |   |-- tests/
-         |   |-- other_files...
-         |-- your files, policed by the fun police
-         |-- subdirs/
-             |-- also
+     |   |--.fun_police/     # the "police station"
+     |   |   |-- CONVENTIONS
+     |   |   |-- tests/
+     |   |   |-- other_files...
+     |   |-- {your files}    # the stuff that is policed
+     |   |-- {subdirs/}      # also, all the way down
+     |-- {other stuff}       # outside of the jurisdiction, not policed
 ```
 ## Analogy for explaining the Fun Police
 
