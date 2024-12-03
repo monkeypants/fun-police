@@ -3,7 +3,7 @@
 This is the fun name for the fun job
 of Software Architecture Compliance.
 
-These are the moving parts:
+These are the moving parts in this repository:
 
 ```
 fun-police/
@@ -14,6 +14,20 @@ fun-police/
  |-- README.md          # For when you need to understand the fun police
 ```
 
+However, this is how it looks when you deploy the fun police in your repository:
+
+```
+repo/
+ |-- some/
+     |-- path/
+         |--.fun_police/
+         |   |-- CONVENTIONS
+         |   |-- tests/
+         |   |-- other_files...
+         |-- your files, policed by the fun police
+         |-- subdirs/
+             |-- also
+```
 ## Analogy for explaining the Fun Police
 
 The management analogy is Accounting and Finance.
