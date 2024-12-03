@@ -28,7 +28,30 @@ repo/
      |   |-- {subdirs/}      # also, all the way down
      |-- {other stuff}       # outside of the jurisdiction, not policed
 ```
-## Analogy for explaining the Fun Police
+When working with the fun police, you have to invite them into your context.
+
+    `/read-only some/path/.fun_police/CONVENTIONS`
+
+Then, your AI assistant should become "fun police enabled".
+This is different from other CONVENTIONS files because, um,
+because of some conventions that fun police conventions follow.
+
+Also because .fun_police/tests enforce architectual compliance
+on all the files (in the fun police station's jurisdiction).
+So the CONVENTIONS are one part of a two-part thing,
+they tell the agent how to behave; and the unittests ensure
+that the agent is not making the kinds of mistakes
+that the unittests know how to detect.
+
+Well, at least it's not making them undetected. Simple idea really.
+
+There are a few other simple ideas:
+* product teams all use the same architecture on the same product
+* the CONVENTIONS co-evolve with the tests
+* tests provide useful, actionable information to both the human and their AI assistant
+* we should share what we learn (because why not)
+
+## Analogies for explaining the Fun Police
 
 The management analogy is Accounting and Finance.
 The difference between these two things is that
@@ -36,26 +59,31 @@ accounting is about the past (historical facts),
 and finance is about the future (sensible guessing).
 The fun police cover both responsibilities.
 The accountant (test suite) runs _after_ code is written,
-and the financiers (policies) are evaluated _before_.
+and the financiers (conventions) are evaluated _before_.
 
 The executive analogy is a high performance race car.
 Software Architecture Policies are the engine
 that accelerates the creation of high-quality software
-(`hands waive furiously`).
+(`hands waive furiously` at this point in the explanation).
 Architecture compliance unittests are the brakes
-that quickly and effectively keep the race car
-on the track when it suddenly needs to change
-its speed and direction.
+that quickly and effectively keep the car on the track
+when it suddenly needs to change speed or direction.
 
-You need a good balance of both to minimise your lap times.
+Businesses need to get both finances and accounting rigt to thrive.
+Race cars need both high performance engines and brakes minimise lap times.
 
 ### Policies Accelerate Delivery
 
 CONVENTIONS.md is an idiom, a grimoire of policies
 for telling your AI code generator HOW you want it to work.
-A fun police CONVENTIONS.md file is exactly one of those,
-with the intent that the spell help the tool
-to load the right policy at the right time.
+A fun police CONVENTIONS file is exactly one of those,
+and it includes instructions to load the right policy at the right time.
+
+```
+|-- .fun_police/
+|   |-- CONVENTIONS
+|   |-- policies/
+```
 
 Policy filenames should also help that process,
 because they might help the tools,
@@ -67,9 +95,8 @@ to the heuristic they are using for the task at hand.
 
 If this is working well, the AI coding tools will load
 the right policies into their context at the right time.
-This will mean that:
-- The code they generate is more likely pass the unittests "first time".
-- Contextual queues about the code will be provided which compliments the code generration tools internal mechanism for choosing what code to load into context.
+This will mean that the code they generate is
+more likely pass the unittests "first time".
 
 The policies accelerate work by telling developers
 (human and AI) how to write code "correctly".
