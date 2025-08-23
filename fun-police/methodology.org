@@ -57,9 +57,9 @@ Rather than "build new system," tasks follow "evolve existing system" using Gall
 
 *** Technical Rationale Integration
 Each task includes architectural reasoning that cross-references:
-- memory-bank/systemPatterns.org for architectural compliance
-- memory-bank/techContext.md for technology stack alignment
-- memory-bank/projectbrief.org for domain boundary validation
+- tech/systemPatterns.org for architectural compliance
+- tech/techContext.org for technology stack alignment
+- spec/projectbrief.org for domain boundary validation
 - sample/GUIDE.md for implementation pattern adherence
 
 ** Architectural Compliance Requirements (MANDATORY)
@@ -149,16 +149,16 @@ Combine tasks when they:
 Before defining implementation tasks:
 
 **** Domain Analysis
-- Map target functionality to domain models (memory-bank/projectbrief.org)
+- Map target functionality to domain models (spec/projectbrief.org)
 - Identify required repository protocols
 - Define use case orchestration patterns
-- Validate against Clean Architecture principles (memory-bank/systemPatterns.org)
+- Validate against Clean Architecture principles (tech/systemPatterns.org)
 
 **** Pattern Identification
 - Locate equivalent patterns in sample/ reference implementation
 - Identify architectural boundaries that need modification
 - Map to three-layer repository pattern requirements
-- Cross-reference with memory-bank/techContext.md for technology constraints
+- Cross-reference with tech/techContext.org for technology constraints
 
 **** Dependency Mapping
 - Identify file dependencies and change ordering
@@ -227,9 +227,9 @@ Update memory bank when tasks reveal:
 *** Documentation Synchronization
 Maintain consistency between:
 - Task descriptions and memory bank context
-- Architectural rationale and systemPatterns.org
-- Technical constraints and techContext.org
-- Progress tracking and current status in tasks.org
+- Architectural rationale and tech/systemPatterns.org
+- Technical constraints and tech/techContext.org
+- Progress tracking and current status in spec/tasks.org
 
 ** Quality Assurance Patterns
 
@@ -241,14 +241,14 @@ Each task must demonstrate:
 - Error handling follows saga pattern (forward/compensation pairs)
 
 *** Testing Integration
-Testing follows the pyramid strategy documented in systemPatterns.org:
+Testing follows the pyramid strategy documented in tech/systemPatterns.org:
 - Unit tests for use case logic with mocked repositories
 - Integration tests for repository contract compliance
 - E2E tests for critical workflow paths
 - Type safety validation with mypy
 
 *** Code Quality Standards
-Aligned with memory-bank/techContext.org:
+Aligned with tech/techContext.org:
 - Pydantic v2 models with field validators
 - Structured logging with business context
 - Protocol-based dependency injection
@@ -300,7 +300,7 @@ The Memory Bank and its methodology are not static; they are expected to evolve.
 
 *Characteristics of Meta-Tasks*:
 - *Focus*: They improve the process of development and documentation, not the product's features.
-- *Scope*: They often involve research, design, and updates to the =memory-bank/= files themselves (e.g., =methodology.org=, =systemPatterns.org=).
-- *Structure*: While they reside in =tasks.org=, their definition may be more goal-oriented than file-centric. The "Files to create/modify" section might be less prescriptive, focusing on the concepts to be documented rather than specific lines of code.
+- *Scope*: They often involve research, design, and updates to the framework files themselves (e.g., =fun-police/methodology.org=, =tech/systemPatterns.org=).
+- *Structure*: While they reside in =spec/tasks.org=, their definition may be more goal-oriented than file-centric. The "Files to create/modify" section might be less prescriptive, focusing on the concepts to be documented rather than specific lines of code.
 
 The core principles of incremental evolution still apply. Meta-tasks should be broken down into manageable steps that maintain a working, coherent Memory Bank at every stage.
