@@ -208,7 +208,7 @@ Format: `{domain}.{usecase}.{constructor_param_name}.{method}`
 
 This ensures workflows remain implementation-agnostic while providing unique, meaningful activity names that map directly to use case constructor parameters.
 
-See tech/systemPatterns.org for detailed architectural rationale and implementation patterns.
+See systemPatterns.org for detailed architectural rationale and implementation patterns.
 
 * Data Serialization
 
