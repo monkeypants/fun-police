@@ -716,10 +716,10 @@ Basic logging and health checks.
    - Offload conceptual, speculative, and long-term vision items from `tasks.org`, sharpening its focus on executable tasks.
 
    **Files to create/modify**:
-   - `memory-bank/ideas.org`: Create the new file with an initial structure and state machine definition.
-   - `memory-bank/methodology.org`: Update to explain the role of `ideas.org` and how it feeds into `tasks.org`.
-   - `memory-bank/instructions.org`: Update to reflect the new file in the memory bank structure.
-   - `memory-bank/tasks.org`: Prune any visionary/non-actionable items that should be moved to `ideas.org`.
+   - `spec/ideas.org`: Create the new file with an initial structure and state machine definition.
+   - `fun-police/methodology.org`: Update to explain the role of `ideas.org` and how it feeds into `tasks.org`.
+   - `fun-police/instructions.org`: Update to reflect the new file in the memory bank structure.
+   - `spec/tasks.org`: Prune any visionary/non-actionable items that should be moved to `ideas.org`.
 
    **Completion Criteria**:
    - [ ] `ideas.org` exists and is documented.
