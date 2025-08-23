@@ -212,10 +212,10 @@ Following the proven workflow from sample/todo.org:
 
 *** Cross-Reference Requirements
 Tasks must reference relevant memory bank files:
-- memory-bank/projectbrief.org for domain boundary validation
-- memory-bank/systemPatterns.org for architectural compliance
-- memory-bank/techContext.org for technology stack alignment
-- memory-bank/instructions.org for AI pair programming patterns
+- spec/projectbrief.org for domain boundary validation
+- tech/systemPatterns.org for architectural compliance
+- tech/techContext.org for technology stack alignment
+- fun-police/instructions.org for AI pair programming patterns
 
 *** Memory Bank Update Triggers
 Update memory bank when tasks reveal:

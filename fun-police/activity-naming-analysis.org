@@ -7,7 +7,7 @@
 
 This document contains the historical analysis that led to the development of the Use Case Constructor Parameter Activity Naming pattern. The insights from this analysis have been formally integrated into the memory bank as a core architectural pattern.
 
-**Current Status**: This pattern is now documented in memory-bank/systemPatterns.org as pattern #11 and is part of the established architectural principles.
+**Current Status**: This pattern is now documented in tech/systemPatterns.org as pattern #11 and is part of the established architectural principles.
 
 * Original Analysis
 

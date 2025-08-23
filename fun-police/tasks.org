@@ -732,8 +732,8 @@ Basic logging and health checks.
    - *Markdown*: An "ephemeral" output. Useful for consumption by the masses but ultimately disposable and generated from the Org-mode sanctum.
 
    **Files to modify**:
-   - `memory-bank/methodology.md`: Add a new section detailing this philosophy.
-   - `memory-bank/GUIDE.md`: Potentially add a note clarifying the role of different document formats.
+   - `fun-police/methodology.org`: Add a new section detailing this philosophy.
+   - `tech/GUIDE.md`: Potentially add a note clarifying the role of different document formats.
 
    **Completion Criteria**:
    - [ ] The philosophy is clearly articulated in the methodology.
@@ -748,8 +748,8 @@ Basic logging and health checks.
    - The output should be a new `adr.org` file or similar, which becomes the canonical source for architectural decisions.
 
    **Files to modify**:
-   - `memory-bank/methodology.md`: Document the new ADR workflow.
-   - `memory-bank/adr.org`: Create the new file to house the decisions. (Or whatever the final design is).
+   - `fun-police/methodology.org`: Document the new ADR workflow.
+   - `spec/adr.org`: Create the new file to house the decisions. (Or whatever the final design is).
 
    **Completion Criteria**:
    - [ ] A clear, documented process for managing ideas and decisions exists.
@@ -764,8 +764,8 @@ Basic logging and health checks.
    - This promotes a literate programming style where diagrams live alongside the text that explains them.
 
    **Files to modify**:
-   - `memory-bank/systemPatterns.md`: Add C4/PlantUML diagrams for key patterns (e.g., three-layer repository).
-   - `memory-bank/GUIDE.md`: Add a top-level C4 context diagram for the whole system.
+   - `tech/systemPatterns.org`: Add C4/PlantUML diagrams for key patterns (e.g., three-layer repository).
+   - `tech/GUIDE.md`: Add a top-level C4 context diagram for the whole system.
 
    **Completion Criteria**:
    - [ ] At least one C4 diagram is successfully embedded and rendered in `systemPatterns.org`.
@@ -775,8 +775,8 @@ Basic logging and health checks.
    Elevate documentation from descriptive to prescriptive by including sections on "Evolution and Trade-offs." This demonstrates foresight and a deeper understanding of architectural decisions.
 
    **Files to modify**:
-   - `memory-bank/systemPatterns.org`: For each major pattern, add a section discussing its limitations, when *not* to use it, and how it might evolve.
-   - `memory-bank/techContext.org`: Add a "Future Considerations" section for the technology stack.
+   - `tech/systemPatterns.org`: For each major pattern, add a section discussing its limitations, when *not* to use it, and how it might evolve.
+   - `tech/techContext.org`: Add a "Future Considerations" section for the technology stack.
 
    **Completion Criteria**:
    - [ ] The "Three-Layer Repository Pattern" section in `systemPatterns.md` has a new "Evolution and Trade-offs" subsection.
@@ -797,7 +797,7 @@ Basic logging and health checks.
    Create a central glossary to define the key nouns and verbs of the system. This prevents ambiguity and ensures consistent terminology.
 
    **Files to create**:
-   - `memory-bank/GLOSSARY.org`: New file to contain the glossary terms and their definitions.
+   - `spec/GLOSSARY.org`: New file to contain the glossary terms and their definitions.
 
    **Completion Criteria**:
    - [X] `GLOSSARY.org` is created.

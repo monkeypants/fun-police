@@ -258,9 +258,9 @@ Analyze findings and develop recommendations for the next steps.
 - [ ] Validated learning documentation (what we now know that we didn't before)
 
 *** Files to modify
-- memory-bank/mvp.org: Complete findings and recommendations sections
-- memory-bank/tasks.org: Update project roadmap based on evaluation results
-- memory-bank/systemPatterns.org: Update with architectural lessons learned
+- spec/mvp.org: Complete findings and recommendations sections
+- spec/tasks.org: Update project roadmap based on evaluation results
+- tech/systemPatterns.org: Update with architectural lessons learned
 
 ** TODO Post-MVP: Fix Calendar Data Validation Issues
 Address the real-world calendar data quality problems discovered during MVP evaluation.

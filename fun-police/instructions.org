@@ -15,50 +15,50 @@ The Fun-Police Framework consists of required core files in a streamlined struct
 
 #+BEGIN_SRC mermaid
 flowchart TD
-    PB[projectbrief.org] --> PC[productContext.org]
-    PB --> SP[systemPatterns.org]
-    PB --> TC[techContext.org]
+    PB[spec/projectbrief.org] --> PC[spec/productContext.org]
+    PB --> SP[tech/systemPatterns.org]
+    PB --> TC[tech/techContext.org]
     
-    PC --> TO[tasks.org]
+    PC --> TO[spec/tasks.org]
     SP --> TO
     TC --> TO
     
     TO --> P[progress.md]
-    M[methodology.org] --> TO
+    M[fun-police/methodology.org] --> TO
 #+END_SRC
 
 *** Core Files (Required)
-- =projectbrief.org=
+- =spec/projectbrief.org=
   - Foundation document that shapes all other files
   - Created at project start if it doesn't exist
   - Defines core requirements and goals
   - Source of truth for project scope
 
-- =productContext.org=
+- =spec/productContext.org=
   - Why this project exists
   - Problems it solves
   - How it should work
   - User experience goals
 
-- =systemPatterns.org=
+- =tech/systemPatterns.org=
   - System architecture
   - Key technical decisions
   - Design patterns in use
   - Component relationships
 
-- =techContext.org=
+- =tech/techContext.org=
   - Technologies used
   - Development setup
   - Technical constraints
   - Dependencies
 
-- =methodology.org=
+- =fun-police/methodology.org=
   - Task management approach and patterns
   - Implementation workflow guidelines
   - Quality assurance standards
   - Lessons learned from successful patterns
 
-- =tasks.org=
+- =spec/tasks.org=
   - *The living heart of the memory bank*
   - Current work focus and active tasks
   - Recent changes and next steps
