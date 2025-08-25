@@ -11,12 +11,16 @@ The Fun Police Framework enforces architectural discipline and engineering best 
 git submodule add https://github.com/your-org/fun-police.git .fun-police
 ```
 
-### 2. Add a Tech Stack as a Git Submodule
+### 2. Add a Tech Stack
+
+You can either use an existing tech stack as a git submodule:
 
 ```bash
 # From your project root
 git submodule add https://github.com/monkeypatns/fun-police-stack1.git .tech
 ```
+
+Or create a bespoke .tech/ directory for your specific project needs.
 
 ### 3. Create a Spec Directory
 
