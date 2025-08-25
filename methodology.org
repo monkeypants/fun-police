@@ -4,11 +4,18 @@
 
 * Engineering Discipline Methodology
 
-This methodology extracts the proven patterns from the successful POC implementation (documented in sample/todo.org) and generalizes them into a comprehensive engineering discipline framework. The Fun-Police Framework enforces architectural rigor through systematic constraints that reduce friction and enable creativity.
+This methodology extracts the proven patterns
+and generalizes them into a comprehensive engineering discipline framework.
+The Fun-Police Framework enforces architectural rigor
+through systematic constraints that reduce friction and enable creativity.
 
-Following the climbing principle that "slow is smooth and smooth is fast," this methodology prioritizes methodical adherence to proven patterns over rapid iteration. Strict discipline in architectural decisions eliminates decision paralysis and prevents technical debt, ultimately accelerating development velocity.
+Following the climbing principle that "slow is smooth and smooth is fast",
+this methodology prioritizes methodical adherence to proven patterns over rapid iteration.
+Strict discipline in architectural decisions eliminates decision paralysis
+and prevents technical debt, ultimately accelerating development velocity.
 
-The framework integrates with the comprehensive documentation system and applies the mandatory architectural principles from systemPatterns.org.
+The framework integrates with the comprehensive documentation system
+and applies the mandatory architectural principles from .tech/systemPatterns.org.
 
 ** Core Principles
 
@@ -21,9 +28,12 @@ Tasks must map directly to architectural boundaries defined in .tech/systemPatte
 - Test coverage expansion (testing pyramid: unit → integration → E2E)
 
 *** Activity Naming Requirements
-When implementing Temporal activities, follow the Use Case Constructor Parameter naming pattern documented in systemPatterns.org:
+When implementing Temporal activities,
+follow the Use Case Constructor Parameter naming pattern
+documented in systemPatterns.org:
 
-*Naming Rule*: Activity names must derive from use case constructor parameter names using the format `{domain}.{usecase}.{constructor_param_name}.{method}`
+*Naming Rule*: Activity names must derive from use case constructor parameter names
+using the format `{domain}.{usecase}.{constructor_param_name}.{method}`
 
 *Validation Criteria*:
 - Use case constructor parameters define semantic roles (source_repo, sink_repo, etc.)
@@ -31,7 +41,9 @@ When implementing Temporal activities, follow the Use Case Constructor Parameter
 - Workflow proxies use identical naming for `workflow.execute_activity()` calls
 
 *Example Task Validation*:
-If implementing a new use case with constructor `__init__(self, data_repo: DataRepository, cache_repo: CacheRepository)`, the activities must be named:
+If implementing a new use case with constructor
+`__init__(self, data_repo: DataRepository, cache_repo: CacheRepository)`,
+the activities must be named:
 - `{domain}.{usecase}.data_repo.{method}`
 - `{domain}.{usecase}.cache_repo.{method}`
 
@@ -42,14 +54,16 @@ If implementing a new use case with constructor `__init__(self, data_repo: DataR
 - [ ] No abstraction leaks (implementation details) in names
 
 *** File-Centric Task Definition
-Following the successful pattern from sample/todo.org, tasks are defined by specific files that need to change, not abstract outcomes. This provides:
+Tasks are defined by specific files that need to change,
+not abstract outcomes. This provides:
 - Clear completion criteria (all specified files changed as described)
 - Architectural traceability (changes map to system boundaries)
 - Incremental progress tracking (file-by-file validation)
 - Reduced scope creep (concrete boundaries prevent expansion)
 
 *** Incremental Evolution Pattern
-Rather than "build new system," tasks follow "evolve existing system" using Gall's Law principles:
+Rather than "build new system," tasks follow "evolve existing system"
+using Gall's Law principles:
 - Start with working patterns from sample/ reference implementation
 - Apply minimal changes to support new domain requirements
 - Maintain working system at each evolutionary step
@@ -64,12 +78,18 @@ Each task includes architectural reasoning that cross-references:
 
 ** Architectural Compliance Requirements (MANDATORY)
 
-The Fun-Police Framework enforces strict compliance with proven patterns. These are not suggestions - they are requirements that prevent architectural violations and technical debt.
+The Fun-Police Framework enforces strict compliance with proven patterns.
+These are not suggestions - they are requirements
+that prevent architectural violations and technical debt.
 
 *File Creation Rule*: Only create files explicitly listed in the current NEXT task.
+
 *Scope Boundary*: If the task doesn't mention repositories, don't create repository protocols.
+
 *Architecture Timing*: Don't implement Clean Architecture patterns until explicitly requested.
-*Test Timing*: Don't write integration or end-to-end tests until the basic functionality works. Unit tests for use cases, which use mocked dependencies, should be written alongside the use case itself.
+
+*Test Timing*: Don't write integration or end-to-end tests until the basic functionality works.
+Unit tests for use cases, which use mocked dependencies, should be written alongside the use case itself.
 
 *Architectural Violations (Framework Enforcement)*:
 - Creating more than 5 files for a single task
@@ -84,31 +104,34 @@ The Fun-Police Framework enforces strict compliance with proven patterns. These 
 ** Task Structure Template
 
 *** Org-Mode Task Hierarchy
-Org-mode supports hierarchical structure where high-level items can be documentation/objectives, with specific TODO tasks as sub-items:
+Org-mode supports hierarchical structure
+where high-level items can be documentation/objectives,
+with specific TODO tasks as sub-items
 
 #+BEGIN_EXAMPLE
-* Personal Assistant Implementation
-** Create Google Calendar → calendar.org MVP # High-level objective (not TODO)
-This section describes the overall goal and context.
+ * Personal Assistant Implementation
+ ** Create Google Calendar → calendar.org MVP # High-level objective (not TODO)
+ This section describes the overall goal and context.
+ 
+ *** NEXT Stage 1: Basic Calendar Polling    # Specific executable task
+ Brief description of what needs to be done.
+ 
+ **** Files to create/modify
+ - [specific file]: [specific change description]
+ - [specific file]: [specific change description]
+ 
+ **** Completion Criteria
+ - [ ] All specified files changed as described
+ - [ ] Basic functionality works as demonstrated
+ - [ ] Ready for next stage
 
-*** NEXT Stage 1: Basic Calendar Polling    # Specific executable task
-Brief description of what needs to be done.
-
-**** Files to create/modify
-- [specific file]: [specific change description]
-- [specific file]: [specific change description]
-
-**** Completion Criteria
-- [ ] All specified files changed as described
-- [ ] Basic functionality works as demonstrated
-- [ ] Ready for next stage
-
-*** TODO Stage 2: Data Processing          # Next specific task
-*** TODO Stage 3: Output Generation        # Future specific task
+ *** TODO Stage 2: Data Processing          # Next specific task
+ *** TODO Stage 3: Output Generation        # Future specific task
 #+END_EXAMPLE
 
 *** Task Specification Requirements
-Only items marked with TODO/NEXT/DONE need specific file lists and completion criteria. Higher-level sections can be objective-oriented and provide context.
+Only items marked with TODO/NEXT/DONE need specific file lists and completion criteria.
+Higher-level sections can be objective-oriented and provide context.
 
 *Executable Task Requirements*:
 - Must specify exact files to create/modify
@@ -122,7 +145,6 @@ Only items marked with TODO/NEXT/DONE need specific file lists and completion cr
 - No specific implementation requirements
 
 *** Task Granularity Guidelines
-Based on successful patterns from sample/todo.org:
 
 **** Optimal Task Size
 - 1-5 files changed per task
@@ -152,13 +174,12 @@ Before defining implementation tasks:
 - Map target functionality to domain models (spec/projectbrief.org)
 - Identify required repository protocols
 - Define use case orchestration patterns
-- Validate against Clean Architecture principles (tech/systemPatterns.org)
-
+- Validate against Clean Architecture principles (./tech/systemPatterns.org)
+  
 **** Pattern Identification
-- Locate equivalent patterns in sample/ reference implementation
 - Identify architectural boundaries that need modification
 - Map to three-layer repository pattern requirements
-- Cross-reference with tech/techContext.org for technology constraints
+- Cross-reference with ./tech/techContext.org for technology constraints
 
 **** Dependency Mapping
 - Identify file dependencies and change ordering
@@ -185,7 +206,6 @@ Using the standard task format:
 - Explain how changes maintain system patterns
 - Justify approach against alternatives
 - Reference relevant fun-police sections
-- Include lessons learned from sample/todo.org
 
 *** Phase 3: Execution and Validation
 
