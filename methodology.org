@@ -87,7 +87,7 @@ The Fun-Police Framework enforces strict compliance with proven patterns. These 
 Org-mode supports hierarchical structure where high-level items can be documentation/objectives, with specific TODO tasks as sub-items:
 
 #+BEGIN_EXAMPLE
-* Personal Assistant Implementation          # Documentation section
+* Personal Assistant Implementation
 ** Create Google Calendar → calendar.org MVP # High-level objective (not TODO)
 This section describes the overall goal and context.
 
@@ -118,7 +118,7 @@ Only items marked with TODO/NEXT/DONE need specific file lists and completion cr
 *Documentation Section Guidelines*:
 - Provide context and rationale
 - Explain overall objectives
-- Cross-reference memory bank files
+- Cross-reference fun-police files
 - No specific implementation requirements
 
 *** Task Granularity Guidelines
@@ -173,7 +173,7 @@ Using the standard task format:
 - Use concrete, measurable outcomes
 - Reference specific architectural patterns
 - Include validation criteria
-- Cross-reference memory bank documentation
+- Cross-reference fun-police documentation
 
 **** File Change Documentation
 - List every file that needs modification
@@ -184,11 +184,10 @@ Using the standard task format:
 **** Architectural Rationale
 - Explain how changes maintain system patterns
 - Justify approach against alternatives
-- Reference relevant memory bank sections
+- Reference relevant fun-police sections
 - Include lessons learned from sample/todo.org
 
 *** Phase 3: Execution and Validation
-Following the proven workflow from sample/todo.org:
 
 **** Implementation Tracking
 - Update task progress as files are modified
@@ -199,26 +198,26 @@ Following the proven workflow from sample/todo.org:
 **** Validation Checkpoints
 - Run tests after each file modification
 - Validate architectural principles are maintained
-- Check cross-references to memory bank remain accurate
+- Check cross-references to fun-police remain accurate
 - Ensure working system is preserved
 
 **** Completion Documentation
 - Mark tasks DONE (git history provides timing)
 - Document any deviations from original plan
-- Update memory bank files if architectural insights discovered
+- Update fun-police files if architectural insights discovered
 - Archive completed tasks to maintain focus on active work
 
-** Integration with Memory Bank System
+** Integration with Fun Police System
 
 *** Cross-Reference Requirements
-Tasks must reference relevant memory bank files:
+Tasks must reference relevant fun-police files:
 - spec/projectbrief.org for domain boundary validation
 - tech/systemPatterns.org for architectural compliance
 - tech/techContext.org for technology stack alignment
 - fun-police/instructions.org for AI pair programming patterns
 
-*** Memory Bank Update Triggers
-Update memory bank when tasks reveal:
+*** Fun-Police Update Triggers
+Update fun-police when tasks reveal:
 - New architectural patterns or insights
 - Changes to technology stack or constraints
 - Evolution of domain understanding
@@ -226,7 +225,7 @@ Update memory bank when tasks reveal:
 
 *** Documentation Synchronization
 Maintain consistency between:
-- Task descriptions and memory bank context
+- Task descriptions and fun-police context
 - Architectural rationale and tech/systemPatterns.org
 - Technical constraints and tech/techContext.org
 - Progress tracking and current status in spec/tasks.org
@@ -259,7 +258,7 @@ Aligned with tech/techContext.org:
   adhering to line-length limits in documentation, as =black= does not
   automatically format them.
 
-** Lessons Learned from sample/todo.org
+** Lessons Learned
 
 *** What Worked Well
 - Concrete file-change specifications prevented scope creep
@@ -274,10 +273,6 @@ Aligned with tech/techContext.org:
 - Prevent large-scope tasks that span multiple architectural boundaries
 - Avoid vague completion criteria that can't be objectively validated
 - Don't separate architectural reasoning from task implementation
-- *Never use "unsafe_mock_*" functions in production workflows* - these violate Clean Architecture
-- *Don't skip the three-layer repository pattern* - always implement Pure Backend → Activity → Proxy
-- *Don't test business logic in workflow tests* - workflow tests should only verify orchestration
-- *Don't jump to complex implementations* - follow the proven patterns from sample/ exactly
 
 *** Success Patterns to Replicate
 - Start with working reference implementation patterns
@@ -287,20 +282,23 @@ Aligned with tech/techContext.org:
 - Maintain working system throughout development process
 - Use org-mode TODO states for clear progress tracking
 - Document rationale for future reference and learning
-- *Follow the exact three-layer pattern from sample/* - Pure Backend → Temporal Activity → Workflow Proxy
-- *Never innovate on architecture* - replicate proven patterns exactly
-- *Break complex tasks into single-layer tasks* - one architectural boundary per task
-- *Validate each layer independently* - ensure each layer works before moving to next
-
-This methodology transforms the successful ad-hoc approach from sample/todo.org into a systematic, repeatable process that maintains architectural integrity while enabling rapid, confident development progress.
 
 ** Enhancing the Methodology (Meta-Tasks)
 
-The Memory Bank and its methodology are not static; they are expected to evolve. Tasks aimed at improving the documentation, tooling, or the methodology itself are called "meta-tasks." These are distinct from feature implementation tasks and follow a slightly different pattern.
+The Fun Police and its methodology are not static; they are expected to evolve.
+Tasks aimed at improving the documentation, tooling,
+or the methodology itself are called "meta-tasks."
+These are distinct from feature implementation tasks and follow a slightly different pattern.
 
 *Characteristics of Meta-Tasks*:
 - *Focus*: They improve the process of development and documentation, not the product's features.
-- *Scope*: They often involve research, design, and updates to the framework files themselves (e.g., =fun-police/methodology.org=, =tech/systemPatterns.org=).
-- *Structure*: While they reside in =spec/tasks.org=, their definition may be more goal-oriented than file-centric. The "Files to create/modify" section might be less prescriptive, focusing on the concepts to be documented rather than specific lines of code.
+- *Scope*: They often involve research, design, and updates to the framework files themselves
+  (e.g., =fun-police/methodology.org=, =tech/systemPatterns.org=).
+- *Structure*: While they reside in =spec/tasks.org=,
+  their definition may be more goal-oriented than file-centric.
+  The "Files to create/modify" section might be less prescriptive,
+  focusing on the concepts to be documented rather than specific lines of code.
 
-The core principles of incremental evolution still apply. Meta-tasks should be broken down into manageable steps that maintain a working, coherent Memory Bank at every stage.
+The core principles of incremental evolution still apply.
+Meta-tasks should be broken down into manageable steps that maintain a working,
+coherent Fun Police at every stage.
