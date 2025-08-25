@@ -27,8 +27,8 @@ git submodule add https://github.com/monkeypants/fun-police-stack1.git .tech
 Or create a bespoke .tech/ directory for your specific project needs.
 
 The .tech/ directory must contain
-- systemPatterns.org
-- techContext.org
+- .tech/systemPatterns.org
+- .tech/techContext.org
 
 ### 3. Create a Spec Directory
 

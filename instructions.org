@@ -16,14 +16,13 @@ The Fun-Police Framework consists of required core files in a streamlined struct
 #+BEGIN_SRC mermaid
 flowchart TD
     PB[spec/projectbrief.org] --> PC[spec/productContext.org]
-    PB --> SP[tech/systemPatterns.org]
-    PB --> TC[tech/techContext.org]
+    PB --> SP[.tech/systemPatterns.org]
+    PB --> TC[.tech/techContext.org]
     
     PC --> TO[spec/tasks.org]
     SP --> TO
     TC --> TO
     
-    TO --> P[progress.md]
     M[fun-police/methodology.org] --> TO
 #+END_SRC
 
@@ -40,13 +39,13 @@ flowchart TD
   - How it should work
   - User experience goals
 
-- =tech/systemPatterns.org=
+- =.tech/systemPatterns.org=
   - System architecture
   - Key technical decisions
   - Design patterns in use
   - Component relationships
 
-- =tech/techContext.org=
+- =.tech/techContext.org=
   - Technologies used
   - Development setup
   - Technical constraints

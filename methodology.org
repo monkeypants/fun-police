@@ -13,7 +13,7 @@ The framework integrates with the comprehensive documentation system and applies
 ** Core Principles
 
 *** Architecture-Driven Task Decomposition
-Tasks must map directly to architectural boundaries defined in tech/systemPatterns.org:
+Tasks must map directly to architectural boundaries defined in .tech/systemPatterns.org:
 - Domain model changes (Pydantic models with validation)
 - Repository protocol updates (three-layer pattern: Pure Backend → Temporal Activity → Workflow Proxy)
 - Use case modifications (business logic orchestration)
@@ -57,8 +57,8 @@ Rather than "build new system," tasks follow "evolve existing system" using Gall
 
 *** Technical Rationale Integration
 Each task includes architectural reasoning that cross-references:
-- tech/systemPatterns.org for architectural compliance
-- tech/techContext.org for technology stack alignment
+- .tech/systemPatterns.org for architectural compliance
+- .tech/techContext.org for technology stack alignment
 - spec/projectbrief.org for domain boundary validation
 - sample/GUIDE.md for implementation pattern adherence
 
