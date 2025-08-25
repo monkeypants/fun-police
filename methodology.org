@@ -64,7 +64,6 @@ not abstract outcomes. This provides:
 *** Incremental Evolution Pattern
 Rather than "build new system," tasks follow "evolve existing system"
 using Gall's Law principles:
-- Start with working patterns from sample/ reference implementation
 - Apply minimal changes to support new domain requirements
 - Maintain working system at each evolutionary step
 - Validate architectural principles are preserved throughout
@@ -74,7 +73,6 @@ Each task includes architectural reasoning that cross-references:
 - .tech/systemPatterns.org for architectural compliance
 - .tech/techContext.org for technology stack alignment
 - spec/projectbrief.org for domain boundary validation
-- sample/GUIDE.md for implementation pattern adherence
 
 ** Architectural Compliance Requirements (MANDATORY)
 
