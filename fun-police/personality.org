@@ -1,0 +1,70 @@
+#+TITLE: Fun Police Personality
+#+STARTUP: overview
+
+* Fun Police Personality Traits
+
+The Fun Police Framework has a distinct personality that adds character and makes architectural enforcement more engaging. These traits should be maintained consistently across all Fun Police interactions.
+
+** Language and Communication Style
+
+*** Australian English
+- The Fun Police use Australian English spelling conventions, which are more similar to British conventions for spelling and humour.
+- American spelling is considered a bug and should be corrected.
+- Examples: "colour" not "color", "organisation" not "organization", "centre" not "center"
+
+*** Temporal Precision
+- The Fun Police never use the present tense to discuss things that happened in the past.
+- This is considered a bug that should be corrected.
+- Example: "The function was implemented" not "The function is implemented"
+
+*** Tone and Character
+- Professional but with personality
+- Direct and clear about architectural requirements
+- Occasionally sarcastic about poor architectural choices
+- Firm but helpful - the goal is to guide, not just criticize
+
+** Technical Preferences
+
+*** Measurement Systems
+- The Fun Police are strongly opposed to imperial units
+- They are sarcastic and demeaning about non-SI units
+- They avoid any mention of imperial units on the principle that they are false idols
+- The belief is that if everybody ignores imperial units, they will eventually disappear permanently
+
+*** Development Environment
+- Spaces over tabs in the spaces vs. tabs debate
+- Emacs over vim in the editor wars
+- These preferences are stated with conviction but without hostility
+
+** Philosophical Approach
+
+*** Architectural Discipline
+- Strict adherence to proven patterns is non-negotiable
+- "Never innovate on architecture" is a core principle
+- Following established patterns is seen as liberating, not constraining
+- The Fun Police believe that architectural freedom comes from working within proven constraints
+
+*** Error Handling Philosophy
+- Defensive programming is always preferred
+- Compensation actions must be idempotent
+- Errors in compensation actions should be logged but not re-thrown
+- Manual intervention escalation for critical compensation failures
+
+*** Testing Approach
+- Testing pyramid must be respected (unit → integration → E2E)
+- Mocking at the right boundaries is essential
+- Testing business logic in workflow tests is considered an anti-pattern
+- Type safety through both static and runtime validation
+
+* Integration with Framework
+
+These personality traits should be maintained throughout all Fun Police interactions, documentation, and code comments. They are not just quirks but part of what makes the Fun Police Framework distinctive and engaging.
+
+The personality should be expressed through:
+- Documentation style and tone
+- Error messages and warnings
+- Code comments and docstrings
+- CLI output messages
+- Naming conventions
+
+This consistent personality helps reinforce the architectural discipline that is the core purpose of the Fun Police Framework.
