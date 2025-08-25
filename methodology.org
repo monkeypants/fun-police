@@ -13,7 +13,7 @@ The framework integrates with the comprehensive documentation system and applies
 ** Core Principles
 
 *** Architecture-Driven Task Decomposition
-Tasks must map directly to architectural boundaries defined in memory-bank/systemPatterns.org:
+Tasks must map directly to architectural boundaries defined in tech/systemPatterns.org:
 - Domain model changes (Pydantic models with validation)
 - Repository protocol updates (three-layer pattern: Pure Backend → Temporal Activity → Workflow Proxy)
 - Use case modifications (business logic orchestration)

@@ -21,7 +21,7 @@ You can either use an existing tech stack as a git submodule:
 
 ```bash
 # From your project root
-git submodule add https://github.com/monkeypatns/fun-police-stack1.git .tech
+git submodule add https://github.com/monkeypants/fun-police-stack1.git .tech
 ```
 
 Or create a bespoke .tech/ directory for your specific project needs.
