@@ -1,0 +1,26 @@
+# Repository Structure Ideas
+
+## Original Structure Concept
+
+The original Fun Police concept used a tech-stack specific organization:
+
+```
+fun-police/
+ |-- {tech-stack}/
+ |   |-- tests/         # Architectural Compliance unittests
+ |   |-- policies/      # The Rules, in plain english
+ |   |-- CONVENTIONS.md # Semantic entry point for context injection
+ |-- README.md          # For when you need to understand the fun police
+```
+
+## Key Ideas Worth Preserving
+
+1. **Tech-stack Specificity**: Different tech stacks have different architectural requirements and conventions.
+
+2. **Tests and Policies Duality**: The combination of forward-looking policies and backward-looking tests creates a complete system.
+
+3. **Playbook Concept**: Tech-stacks function as complete playbooks with cohesive bundles of policies and tests.
+
+## Integration with Current Approach
+
+The current org-mode based memory bank system could potentially be extended with tech-stack specific variants, combining the best of both approaches.
