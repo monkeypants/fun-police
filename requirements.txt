@@ -1,6 +1,0 @@
-aider-chat
-
-## YAGNI
-# pydantic
-# pre-commit
-# pytest
